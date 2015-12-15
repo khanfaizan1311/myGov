@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="3" failed="1" total="4" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="147" started-at="2015-12-15T11:15:26Z" finished-at="2015-12-15T11:15:26Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="147" started-at="2015-12-15T11:15:26Z" finished-at="2015-12-15T11:15:26Z">
+      <class name="homepage.launch_config">
+        <test-method status="PASS" signature="launch_conf()[pri:0, instance:homepage.launch_config@17b1517]" name="launch_conf" is-config="true" duration-ms="23414" started-at="2015-12-15T16:45:02Z" finished-at="2015-12-15T16:45:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_conf -->
+      </class> <!-- homepage.launch_config -->
+      <class name="homepage.imp_methods">
+        <test-method status="FAIL" signature="set_up()[pri:0, instance:homepage.imp_methods@1c7db30]" name="set_up" is-config="true" duration-ms="0" started-at="2015-12-15T16:45:26Z" finished-at="2015-12-15T16:45:26Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at homepage.all_ids.<init>(all_ids.java:16)
+	at homepage.launch_config.set_up(launch_config.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set_up -->
+        <test-method status="FAIL" signature="getscreenshot(java.lang.String, int)[pri:0, instance:homepage.imp_methods@1c7db30]" name="getscreenshot" duration-ms="0" started-at="2015-12-15T16:45:26Z" finished-at="2015-12-15T16:45:26Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method getscreenshot requires 2 parameters but 0 were supplied in the @Test annotation.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method getscreenshot requires 2 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:198)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:134)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:373)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:450)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getscreenshot -->
+      </class> <!-- homepage.imp_methods -->
+      <class name="homepage.homepage_test">
+        <test-method status="SKIP" signature="set_up()[pri:0, instance:homepage.homepage_test@1f37ef1]" name="set_up" is-config="true" duration-ms="0" started-at="2015-12-15T16:45:26Z" finished-at="2015-12-15T16:45:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set_up -->
+        <test-method status="SKIP" signature="check_skip()[pri:0, instance:homepage.homepage_test@1f37ef1]" name="check_skip" duration-ms="1" started-at="2015-12-15T16:45:26Z" finished-at="2015-12-15T16:45:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_skip -->
+        <test-method status="SKIP" signature="check_titl()[pri:0, instance:homepage.homepage_test@1f37ef1]" name="check_titl" duration-ms="1" started-at="2015-12-15T16:45:26Z" finished-at="2015-12-15T16:45:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_titl -->
+        <test-method status="SKIP" signature="login()[pri:0, instance:homepage.homepage_test@1f37ef1]" name="login" duration-ms="0" started-at="2015-12-15T16:45:26Z" finished-at="2015-12-15T16:45:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- homepage.homepage_test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="homepage.launch_config">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- homepage.launch_config -->
+      <class name="homepage.homepage_test">
+        <methods>
+          <include name="check_title"/>
+          <include name="check_Title"/>
+        </methods>
+      </class> <!-- homepage.homepage_test -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
